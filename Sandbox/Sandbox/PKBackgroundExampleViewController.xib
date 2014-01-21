@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PKBackgroundExampleViewController">
+            <connections>
+                <outlet property="imageView" destination="4uA-ve-HPM" id="HW0-Gy-OrD"/>
+                <outlet property="progressView" destination="cfx-wr-d30" id="g8B-Bm-gQd"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-ve-HPM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="XWM-Ip-fGo"/>
+                        <constraint firstAttribute="height" constant="568" id="sfO-rb-ug8"/>
+                    </constraints>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cfx-wr-d30">
+                    <rect key="frame" x="85" y="73" width="150" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </progressView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8Y-Ey-g0n">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="s1J-5E-DCL"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Crash" id="NQW-GR-ln5">
+                            <connections>
+                                <action selector="crash:" destination="-1" id="zC2-sX-ga8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ioK-ta-fCs"/>
+                        <barButtonItem title="Start" id="S0p-AP-B1h">
+                            <connections>
+                                <action selector="send:" destination="-1" id="bEG-q9-e7d"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O8Y-Ey-g0n" secondAttribute="bottom" id="5d8-e5-NJa"/>
+                <constraint firstItem="O8Y-Ey-g0n" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="HNU-sx-9I7"/>
+                <constraint firstItem="cfx-wr-d30" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="85" id="IFq-IH-xCc"/>
+                <constraint firstAttribute="centerX" secondItem="4uA-ve-HPM" secondAttribute="centerX" id="Ou1-QA-aUo"/>
+                <constraint firstAttribute="trailing" secondItem="O8Y-Ey-g0n" secondAttribute="trailing" id="QnQ-cY-g24"/>
+                <constraint firstAttribute="trailing" secondItem="cfx-wr-d30" secondAttribute="trailing" constant="85" id="c7j-63-2B2"/>
+                <constraint firstAttribute="centerY" secondItem="4uA-ve-HPM" secondAttribute="centerY" id="meA-pZ-ZYB"/>
+                <constraint firstItem="cfx-wr-d30" firstAttribute="top" secondItem="1" secondAttribute="top" constant="73" id="tA4-V5-WAk"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

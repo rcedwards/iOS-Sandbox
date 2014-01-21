@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PKGlobalNotificationsViewController">
+            <connections>
+                <outlet property="enableLoggingSwitch" destination="qJv-hF-pa9" id="zqO-98-Q0u"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJv-hF-pa9">
+                    <rect key="frame" x="197" y="98" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="bTX-TW-srO"/>
+                        <constraint firstAttribute="height" constant="31" id="gMe-98-q8P"/>
+                    </constraints>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyn-yq-Cp5">
+                    <rect key="frame" x="82" y="98" width="107" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="107" id="Ep2-Uw-oar"/>
+                        <constraint firstAttribute="height" constant="30" id="jL9-z2-JFe"/>
+                    </constraints>
+                    <state key="normal" title="Enable Logging">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Qyn-yq-Cp5" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="82" id="94A-GE-aEs"/>
+                <constraint firstItem="qJv-hF-pa9" firstAttribute="top" secondItem="1" secondAttribute="top" constant="98" id="Gb6-9l-3lt"/>
+                <constraint firstItem="qJv-hF-pa9" firstAttribute="leading" secondItem="Qyn-yq-Cp5" secondAttribute="trailing" constant="8" id="PXO-KE-ECc"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qJv-hF-pa9" secondAttribute="trailing" constant="20" id="SQk-QG-1Cn"/>
+                <constraint firstItem="Qyn-yq-Cp5" firstAttribute="top" secondItem="1" secondAttribute="top" constant="98" id="aui-9m-BIK"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
