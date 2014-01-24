@@ -15,6 +15,7 @@
 #import "PKCardDemoViewController.h"
 #import "PKGlobalNotificationsViewController.h"
 #import "PKBackgroundExampleViewController.h"
+#import "PKRuntimeViewController.h"
 
 @interface PKSelectionViewController ()
 
@@ -38,7 +39,8 @@
 										  NSStringFromClass([PKKVOExampleViewController class]),
 										  NSStringFromClass([PKGlobalNotificationsViewController class])],
                                       @[
-                                          NSStringFromClass([PKCardDemoViewController class])],
+                                          NSStringFromClass([PKCardDemoViewController class]),
+										  NSStringFromClass([PKRuntimeViewController class])],
                                       @[
                                           NSStringFromClass([PKBackgroundExampleViewController class])]];
         
