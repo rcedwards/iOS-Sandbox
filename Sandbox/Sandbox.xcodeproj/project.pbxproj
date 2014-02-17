@@ -15,6 +15,10 @@
 		D411309D1888D5C100551DF0 /* PKCardDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D411309B1888D5C100551DF0 /* PKCardDemoViewController.xib */; };
 		D4DF5F7F188C394F0000B886 /* PKBackgroundExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DF5F7D188C394F0000B886 /* PKBackgroundExampleViewController.m */; };
 		D4DF5F80188C394F0000B886 /* PKBackgroundExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4DF5F7E188C394F0000B886 /* PKBackgroundExampleViewController.xib */; };
+		E407A02C18A3ED070028D25A /* PKCharacterEncodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */; };
+		E407A02D18A3ED070028D25A /* PKCharacterEncodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */; };
+		E4241BF618B2555600F39B9D /* PKImageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4241BF418B2555600F39B9D /* PKImageListTableViewController.m */; };
+		E4241BF718B2555600F39B9D /* PKImageListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4241BF518B2555600F39B9D /* PKImageListTableViewController.xib */; };
 		E4270FFA185A76C60096E236 /* PKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E4270FF5185A76C60096E236 /* PKCard.m */; };
 		E4270FFB185A76C60096E236 /* PKDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E4270FF7185A76C60096E236 /* PKDeck.m */; };
 		E4271007185A7A080096E236 /* PKUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4271006185A7A080096E236 /* PKUITableViewController.m */; };
@@ -27,6 +31,8 @@
 		E4A0EAE91876018A009350B1 /* El_Capitan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A0EAE81876018A009350B1 /* El_Capitan.jpg */; };
 		E4A0EAEB187601B3009350B1 /* AFIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A0EAEA187601B3009350B1 /* AFIcon.png */; };
 		E4CDEF3B18885BDA008B9560 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CDEF3A18885BDA008B9560 /* AppAssets.xcassets */; };
+		E4D4B9F718B2C33800553163 /* PKImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4B9F618B2C33800553163 /* PKImageCell.m */; };
+		E4D4B9FA18B2C72C00553163 /* UIImage+AsyncLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4B9F918B2C72C00553163 /* UIImage+AsyncLoading.m */; };
 		E4D777541856469C00C3A37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D777531856469C00C3A37C /* Foundation.framework */; };
 		E4D777561856469C00C3A37C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D777551856469C00C3A37C /* CoreGraphics.framework */; };
 		E4D777581856469C00C3A37C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D777571856469C00C3A37C /* UIKit.framework */; };
@@ -54,6 +60,12 @@
 		D4DF5F7C188C394F0000B886 /* PKBackgroundExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKBackgroundExampleViewController.h; sourceTree = "<group>"; };
 		D4DF5F7D188C394F0000B886 /* PKBackgroundExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKBackgroundExampleViewController.m; sourceTree = "<group>"; };
 		D4DF5F7E188C394F0000B886 /* PKBackgroundExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKBackgroundExampleViewController.xib; sourceTree = "<group>"; };
+		E407A02918A3ED070028D25A /* PKCharacterEncodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCharacterEncodingViewController.h; sourceTree = "<group>"; };
+		E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCharacterEncodingViewController.m; sourceTree = "<group>"; };
+		E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKCharacterEncodingViewController.xib; sourceTree = "<group>"; };
+		E4241BF318B2555600F39B9D /* PKImageListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKImageListTableViewController.h; sourceTree = "<group>"; };
+		E4241BF418B2555600F39B9D /* PKImageListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKImageListTableViewController.m; sourceTree = "<group>"; };
+		E4241BF518B2555600F39B9D /* PKImageListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKImageListTableViewController.xib; sourceTree = "<group>"; };
 		E4270FF4185A76C60096E236 /* PKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCard.h; sourceTree = "<group>"; };
 		E4270FF5185A76C60096E236 /* PKCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCard.m; sourceTree = "<group>"; };
 		E4270FF6185A76C60096E236 /* PKDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDeck.h; sourceTree = "<group>"; };
@@ -73,6 +85,10 @@
 		E4A0EAE81876018A009350B1 /* El_Capitan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = El_Capitan.jpg; sourceTree = "<group>"; };
 		E4A0EAEA187601B3009350B1 /* AFIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AFIcon.png; sourceTree = "<group>"; };
 		E4CDEF3A18885BDA008B9560 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
+		E4D4B9F518B2C33800553163 /* PKImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKImageCell.h; sourceTree = "<group>"; };
+		E4D4B9F618B2C33800553163 /* PKImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKImageCell.m; sourceTree = "<group>"; };
+		E4D4B9F818B2C72C00553163 /* UIImage+AsyncLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AsyncLoading.h"; sourceTree = "<group>"; };
+		E4D4B9F918B2C72C00553163 /* UIImage+AsyncLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AsyncLoading.m"; sourceTree = "<group>"; };
 		E4D777501856469C00C3A37C /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D777531856469C00C3A37C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E4D777551856469C00C3A37C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +197,30 @@
 			name = "Background NSURLSessions";
 			sourceTree = "<group>";
 		};
+		E407A02818A3ECE30028D25A /* Character Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				E407A02918A3ED070028D25A /* PKCharacterEncodingViewController.h */,
+				E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */,
+				E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */,
+			);
+			name = "Character Encoding";
+			sourceTree = "<group>";
+		};
+		E4241BF218B2551A00F39B9D /* Tableview Images */ = {
+			isa = PBXGroup;
+			children = (
+				E4241BF318B2555600F39B9D /* PKImageListTableViewController.h */,
+				E4241BF418B2555600F39B9D /* PKImageListTableViewController.m */,
+				E4241BF518B2555600F39B9D /* PKImageListTableViewController.xib */,
+				E4D4B9F518B2C33800553163 /* PKImageCell.h */,
+				E4D4B9F618B2C33800553163 /* PKImageCell.m */,
+				E4D4B9F818B2C72C00553163 /* UIImage+AsyncLoading.h */,
+				E4D4B9F918B2C72C00553163 /* UIImage+AsyncLoading.m */,
+			);
+			name = "Tableview Images";
+			sourceTree = "<group>";
+		};
 		E43BEC041891BBFD00EB17A7 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +233,8 @@
 		E497AA0F1886F247002B6516 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				E4241BF218B2551A00F39B9D /* Tableview Images */,
+				E407A02818A3ECE30028D25A /* Character Encoding */,
 				E43BEC041891BBFD00EB17A7 /* Runtime */,
 				D4DF5F7B188C39380000B886 /* Background NSURLSessions */,
 				E4EBAE211889ADED005EF71E /* Global Notification Subscribing */,
@@ -397,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E407A02D18A3ED070028D25A /* PKCharacterEncodingViewController.xib in Resources */,
 				E4D77787185646F400C3A37C /* PKKVOExampleViewController.xib in Resources */,
 				E4D7778E1856531000C3A37C /* Localizable.strings in Resources */,
 				D411309418879DA200551DF0 /* PKShakeViewController.xib in Resources */,
@@ -407,6 +450,7 @@
 				E4CDEF3B18885BDA008B9560 /* AppAssets.xcassets in Resources */,
 				E4D7775E1856469C00C3A37C /* InfoPlist.strings in Resources */,
 				D4DF5F80188C394F0000B886 /* PKBackgroundExampleViewController.xib in Resources */,
+				E4241BF718B2555600F39B9D /* PKImageListTableViewController.xib in Resources */,
 				E497AA1D1886F8B9002B6516 /* PKColorSwapperViewController.xib in Resources */,
 				D411309D1888D5C100551DF0 /* PKCardDemoViewController.xib in Resources */,
 				E4A0EAEB187601B3009350B1 /* AFIcon.png in Resources */,
@@ -425,13 +469,17 @@
 				E4270FFA185A76C60096E236 /* PKCard.m in Sources */,
 				D411309218879CB000551DF0 /* PKShakeViewController.m in Sources */,
 				E4D777951856575500C3A37C /* UIView+ObjectTag.m in Sources */,
+				E4D4B9FA18B2C72C00553163 /* UIImage+AsyncLoading.m in Sources */,
 				D411309C1888D5C100551DF0 /* PKCardDemoViewController.m in Sources */,
+				E407A02C18A3ED070028D25A /* PKCharacterEncodingViewController.m in Sources */,
 				E43BEC071891BC1600EB17A7 /* PKRuntimeViewController.m in Sources */,
 				E4D77786185646F400C3A37C /* PKKVOExampleViewController.m in Sources */,
 				E497AA1B1886F764002B6516 /* PKColorSwapperViewController.m in Sources */,
 				E4D777601856469C00C3A37C /* main.m in Sources */,
 				E4EBAE251889AE05005EF71E /* PKGlobalNotificationsViewController.m in Sources */,
+				E4241BF618B2555600F39B9D /* PKImageListTableViewController.m in Sources */,
 				D41130871886328E00551DF0 /* PKSelectionViewController.m in Sources */,
+				E4D4B9F718B2C33800553163 /* PKImageCell.m in Sources */,
 				E4271007185A7A080096E236 /* PKUITableViewController.m in Sources */,
 				E4270FFB185A76C60096E236 /* PKDeck.m in Sources */,
 				E4A0EAE71876006B009350B1 /* NSData+ImageType.m in Sources */,

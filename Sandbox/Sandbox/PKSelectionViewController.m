@@ -16,6 +16,8 @@
 #import "PKGlobalNotificationsViewController.h"
 #import "PKBackgroundExampleViewController.h"
 #import "PKRuntimeViewController.h"
+#import "PKCharacterEncodingViewController.h"
+#import "PKImageListTableViewController.h"
 
 @interface PKSelectionViewController ()
 
@@ -34,7 +36,9 @@
         _viewControllerCollection = @[@[
 										  NSStringFromClass([PKColorSwapperViewController class]),
 										  NSStringFromClass([PKImageEvalViewController class]),
-                                          NSStringFromClass([PKShakeViewController class])],
+                                          NSStringFromClass([PKShakeViewController class]),
+										  NSStringFromClass([PKCharacterEncodingViewController class]),
+										  NSStringFromClass([PKImageListTableViewController class])],
                                       @[
 										  NSStringFromClass([PKKVOExampleViewController class]),
 										  NSStringFromClass([PKGlobalNotificationsViewController class])],

@@ -26,7 +26,7 @@
 - (IBAction)runCardRoutine:(id)sender {
     PKDeck *cardDeck = [[PKDeck alloc] init];
 	[cardDeck.cards enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-		NSLog(@"%@ at position: %d", obj, idx);
+		NSLog(@"%@ at position: %lu", obj, (unsigned long)idx);
 	}];
 }
 
