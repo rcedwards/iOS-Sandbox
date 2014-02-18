@@ -17,8 +17,6 @@
 		D4DF5F7F188C394F0000B886 /* PKBackgroundExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DF5F7D188C394F0000B886 /* PKBackgroundExampleViewController.m */; };
 		D4DF5F80188C394F0000B886 /* PKBackgroundExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4DF5F7E188C394F0000B886 /* PKBackgroundExampleViewController.xib */; };
 		D4EB35E118B2FA4F003EC5E5 /* NSString+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB35E018B2FA4F003EC5E5 /* NSString+Digest.m */; };
-		E407A02C18A3ED070028D25A /* PKCharacterEncodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */; };
-		E407A02D18A3ED070028D25A /* PKCharacterEncodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */; };
 		E4241BF618B2555600F39B9D /* PKImageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4241BF418B2555600F39B9D /* PKImageListTableViewController.m */; };
 		E4241BF718B2555600F39B9D /* PKImageListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4241BF518B2555600F39B9D /* PKImageListTableViewController.xib */; };
 		E4270FFA185A76C60096E236 /* PKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E4270FF5185A76C60096E236 /* PKCard.m */; };
@@ -66,9 +64,6 @@
 		D4DF5F7E188C394F0000B886 /* PKBackgroundExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKBackgroundExampleViewController.xib; sourceTree = "<group>"; };
 		D4EB35DF18B2FA4F003EC5E5 /* NSString+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Digest.h"; sourceTree = "<group>"; };
 		D4EB35E018B2FA4F003EC5E5 /* NSString+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Digest.m"; sourceTree = "<group>"; };
-		E407A02918A3ED070028D25A /* PKCharacterEncodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCharacterEncodingViewController.h; sourceTree = "<group>"; };
-		E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCharacterEncodingViewController.m; sourceTree = "<group>"; };
-		E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKCharacterEncodingViewController.xib; sourceTree = "<group>"; };
 		E4241BF318B2555600F39B9D /* PKImageListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKImageListTableViewController.h; sourceTree = "<group>"; };
 		E4241BF418B2555600F39B9D /* PKImageListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKImageListTableViewController.m; sourceTree = "<group>"; };
 		E4241BF518B2555600F39B9D /* PKImageListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKImageListTableViewController.xib; sourceTree = "<group>"; };
@@ -226,16 +221,6 @@
 			name = "Background NSURLSessions";
 			sourceTree = "<group>";
 		};
-		E407A02818A3ECE30028D25A /* Character Encoding */ = {
-			isa = PBXGroup;
-			children = (
-				E407A02918A3ED070028D25A /* PKCharacterEncodingViewController.h */,
-				E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */,
-				E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */,
-			);
-			name = "Character Encoding";
-			sourceTree = "<group>";
-		};
 		E4241BF218B2551A00F39B9D /* Tableview Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				E4241BF218B2551A00F39B9D /* Tableview Images */,
-				E407A02818A3ECE30028D25A /* Character Encoding */,
 				E43BEC041891BBFD00EB17A7 /* Runtime */,
 				D4DF5F7B188C39380000B886 /* Background NSURLSessions */,
 				E4EBAE211889ADED005EF71E /* Global Notification Subscribing */,
@@ -465,7 +449,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E407A02D18A3ED070028D25A /* PKCharacterEncodingViewController.xib in Resources */,
 				E4D77787185646F400C3A37C /* PKKVOExampleViewController.xib in Resources */,
 				E4D7778E1856531000C3A37C /* Localizable.strings in Resources */,
 				D411309418879DA200551DF0 /* PKShakeViewController.xib in Resources */,
@@ -498,7 +481,6 @@
 				E4D777951856575500C3A37C /* UIView+ObjectTag.m in Sources */,
 				E4D4B9FA18B2C72C00553163 /* UIImage+AsyncLoading.m in Sources */,
 				D411309C1888D5C100551DF0 /* PKCardDemoViewController.m in Sources */,
-				E407A02C18A3ED070028D25A /* PKCharacterEncodingViewController.m in Sources */,
 				E43BEC071891BC1600EB17A7 /* PKRuntimeViewController.m in Sources */,
 				E4D77786185646F400C3A37C /* PKKVOExampleViewController.m in Sources */,
 				D4EB35E118B2FA4F003EC5E5 /* NSString+Digest.m in Sources */,
