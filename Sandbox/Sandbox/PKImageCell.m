@@ -12,6 +12,7 @@
 @interface PKImageCell()
 
 @property (nonatomic, strong) NSBlockOperation *loadOperation;
+@property (nonatomic, strong) UIImageView *bannerImageView;
 
 @end
 
@@ -21,20 +22,24 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
-    }
+        _bannerImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        _bannerImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _bannerImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+        [self.contentView addSubview:_bannerImageView];
+   }
     return self;
 }
 
 - (void)configureWithImageURL:(NSURL *)imageURL {
-	self.loadOperation = [UIImage loadImageWithURL:imageURL completion:^(UIImage *image) {
-		self.imageView.image = image;
+	self.loadOperation = [UIImage loadImageWithURL:imageURL scale:0.7f shouldCache:YES completion:^(UIImage *image) {
+		self.bannerImageView.image = image;
 	}];
 }
 
 - (void)prepareForReuse {
 	[self.loadOperation cancel];
 	self.loadOperation = nil;
+    self.bannerImageView.image = nil;
 }
 
 @end

@@ -13,8 +13,10 @@
 		D411309418879DA200551DF0 /* PKShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D411309318879DA200551DF0 /* PKShakeViewController.xib */; };
 		D411309C1888D5C100551DF0 /* PKCardDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D411309A1888D5C100551DF0 /* PKCardDemoViewController.m */; };
 		D411309D1888D5C100551DF0 /* PKCardDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D411309B1888D5C100551DF0 /* PKCardDemoViewController.xib */; };
+		D4D6D5B018B2F10C00F7FD31 /* NSData+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D6D5AF18B2F10C00F7FD31 /* NSData+Digest.m */; };
 		D4DF5F7F188C394F0000B886 /* PKBackgroundExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DF5F7D188C394F0000B886 /* PKBackgroundExampleViewController.m */; };
 		D4DF5F80188C394F0000B886 /* PKBackgroundExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4DF5F7E188C394F0000B886 /* PKBackgroundExampleViewController.xib */; };
+		D4EB35E118B2FA4F003EC5E5 /* NSString+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB35E018B2FA4F003EC5E5 /* NSString+Digest.m */; };
 		E407A02C18A3ED070028D25A /* PKCharacterEncodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */; };
 		E407A02D18A3ED070028D25A /* PKCharacterEncodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */; };
 		E4241BF618B2555600F39B9D /* PKImageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4241BF418B2555600F39B9D /* PKImageListTableViewController.m */; };
@@ -57,9 +59,13 @@
 		D41130991888D5C100551DF0 /* PKCardDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardDemoViewController.h; sourceTree = "<group>"; };
 		D411309A1888D5C100551DF0 /* PKCardDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardDemoViewController.m; sourceTree = "<group>"; };
 		D411309B1888D5C100551DF0 /* PKCardDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKCardDemoViewController.xib; sourceTree = "<group>"; };
+		D4D6D5AE18B2F10C00F7FD31 /* NSData+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Digest.h"; sourceTree = "<group>"; };
+		D4D6D5AF18B2F10C00F7FD31 /* NSData+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Digest.m"; sourceTree = "<group>"; };
 		D4DF5F7C188C394F0000B886 /* PKBackgroundExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKBackgroundExampleViewController.h; sourceTree = "<group>"; };
 		D4DF5F7D188C394F0000B886 /* PKBackgroundExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKBackgroundExampleViewController.m; sourceTree = "<group>"; };
 		D4DF5F7E188C394F0000B886 /* PKBackgroundExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKBackgroundExampleViewController.xib; sourceTree = "<group>"; };
+		D4EB35DF18B2FA4F003EC5E5 /* NSString+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Digest.h"; sourceTree = "<group>"; };
+		D4EB35E018B2FA4F003EC5E5 /* NSString+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Digest.m"; sourceTree = "<group>"; };
 		E407A02918A3ED070028D25A /* PKCharacterEncodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCharacterEncodingViewController.h; sourceTree = "<group>"; };
 		E407A02A18A3ED070028D25A /* PKCharacterEncodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCharacterEncodingViewController.m; sourceTree = "<group>"; };
 		E407A02B18A3ED070028D25A /* PKCharacterEncodingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKCharacterEncodingViewController.xib; sourceTree = "<group>"; };
@@ -187,6 +193,29 @@
 			name = "View Controller";
 			sourceTree = "<group>";
 		};
+		D4D6D5AC18B2F0DF00F7FD31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4B9F818B2C72C00553163 /* UIImage+AsyncLoading.h */,
+				E4D4B9F918B2C72C00553163 /* UIImage+AsyncLoading.m */,
+				D4D6D5AE18B2F10C00F7FD31 /* NSData+Digest.h */,
+				D4D6D5AF18B2F10C00F7FD31 /* NSData+Digest.m */,
+				D4EB35DF18B2FA4F003EC5E5 /* NSString+Digest.h */,
+				D4EB35E018B2FA4F003EC5E5 /* NSString+Digest.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D4D6D5AD18B2F0ED00F7FD31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4241BF518B2555600F39B9D /* PKImageListTableViewController.xib */,
+				E4D4B9F518B2C33800553163 /* PKImageCell.h */,
+				E4D4B9F618B2C33800553163 /* PKImageCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		D4DF5F7B188C39380000B886 /* Background NSURLSessions */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,13 +239,10 @@
 		E4241BF218B2551A00F39B9D /* Tableview Images */ = {
 			isa = PBXGroup;
 			children = (
+				D4D6D5AD18B2F0ED00F7FD31 /* Views */,
+				D4D6D5AC18B2F0DF00F7FD31 /* Extensions */,
 				E4241BF318B2555600F39B9D /* PKImageListTableViewController.h */,
 				E4241BF418B2555600F39B9D /* PKImageListTableViewController.m */,
-				E4241BF518B2555600F39B9D /* PKImageListTableViewController.xib */,
-				E4D4B9F518B2C33800553163 /* PKImageCell.h */,
-				E4D4B9F618B2C33800553163 /* PKImageCell.m */,
-				E4D4B9F818B2C72C00553163 /* UIImage+AsyncLoading.h */,
-				E4D4B9F918B2C72C00553163 /* UIImage+AsyncLoading.m */,
 			);
 			name = "Tableview Images";
 			sourceTree = "<group>";
@@ -465,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DF5F7F188C394F0000B886 /* PKBackgroundExampleViewController.m in Sources */,
+				D4D6D5B018B2F10C00F7FD31 /* NSData+Digest.m in Sources */,
 				E497AA131886F26F002B6516 /* PKImageEvalViewController.m in Sources */,
 				E4270FFA185A76C60096E236 /* PKCard.m in Sources */,
 				D411309218879CB000551DF0 /* PKShakeViewController.m in Sources */,
@@ -474,6 +501,7 @@
 				E407A02C18A3ED070028D25A /* PKCharacterEncodingViewController.m in Sources */,
 				E43BEC071891BC1600EB17A7 /* PKRuntimeViewController.m in Sources */,
 				E4D77786185646F400C3A37C /* PKKVOExampleViewController.m in Sources */,
+				D4EB35E118B2FA4F003EC5E5 /* NSString+Digest.m in Sources */,
 				E497AA1B1886F764002B6516 /* PKColorSwapperViewController.m in Sources */,
 				E4D777601856469C00C3A37C /* main.m in Sources */,
 				E4EBAE251889AE05005EF71E /* PKGlobalNotificationsViewController.m in Sources */,
@@ -593,6 +621,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sandbox/Sandbox-Prefix.pch";
 				INFOPLIST_FILE = "Sandbox/Sandbox-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -606,6 +638,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sandbox/Sandbox-Prefix.pch";
 				INFOPLIST_FILE = "Sandbox/Sandbox-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

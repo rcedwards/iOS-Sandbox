@@ -10,6 +10,9 @@
 
 @interface UIImage (AsyncLoading)
 
-+ (NSBlockOperation *)loadImageWithURL:(NSURL *)url completion:(void(^)(UIImage *image))completion;
++ (NSBlockOperation *)loadImageWithURL:(NSURL *)url
+                                 scale:(CGFloat)scale
+                           shouldCache:(BOOL)shouldCache
+                            completion:(void(^)(UIImage *image))completion;
 
 @end
