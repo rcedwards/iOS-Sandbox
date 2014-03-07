@@ -43,9 +43,25 @@
 		E4D77787185646F400C3A37C /* PKKVOExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D77785185646F400C3A37C /* PKKVOExampleViewController.xib */; };
 		E4D7778E1856531000C3A37C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4D777901856531000C3A37C /* Localizable.strings */; };
 		E4D777951856575500C3A37C /* UIView+ObjectTag.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D777941856575500C3A37C /* UIView+ObjectTag.m */; };
+		E4E345DC18CA535A00DCD482 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D7776C1856469C00C3A37C /* XCTest.framework */; };
+		E4E345DD18CA535A00DCD482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D777531856469C00C3A37C /* Foundation.framework */; };
+		E4E345DE18CA535A00DCD482 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D777571856469C00C3A37C /* UIKit.framework */; };
+		E4E345E418CA535A00DCD482 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4E345E218CA535A00DCD482 /* InfoPlist.strings */; };
+		E4E345F018CA539500DCD482 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E345EF18CA539500DCD482 /* NSString+Validation.m */; };
+		E4E345F218CA53AA00DCD482 /* PKEmailValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E345F118CA53AA00DCD482 /* PKEmailValidationTests.m */; };
 		E4EBAE251889AE05005EF71E /* PKGlobalNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EBAE231889AE05005EF71E /* PKGlobalNotificationsViewController.m */; };
 		E4EBAE261889AE05005EF71E /* PKGlobalNotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EBAE241889AE05005EF71E /* PKGlobalNotificationsViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4E345E818CA535A00DCD482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D777481856469C00C3A37C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D7774F1856469C00C3A37C;
+			remoteInfo = Sandbox;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D41130841886328E00551DF0 /* PKSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSelectionViewController.h; sourceTree = "<group>"; };
@@ -109,6 +125,13 @@
 		E4D777911856531800C3A37C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E4D777931856575500C3A37C /* UIView+ObjectTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ObjectTag.h"; sourceTree = "<group>"; };
 		E4D777941856575500C3A37C /* UIView+ObjectTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ObjectTag.m"; sourceTree = "<group>"; };
+		E4E345DB18CA535A00DCD482 /* Sandbox Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sandbox Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E345E118CA535A00DCD482 /* Sandbox Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sandbox Tests-Info.plist"; sourceTree = "<group>"; };
+		E4E345E318CA535A00DCD482 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4E345E718CA535A00DCD482 /* Sandbox Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sandbox Tests-Prefix.pch"; sourceTree = "<group>"; };
+		E4E345EE18CA539500DCD482 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
+		E4E345EF18CA539500DCD482 /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
+		E4E345F118CA53AA00DCD482 /* PKEmailValidationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKEmailValidationTests.m; sourceTree = "<group>"; };
 		E4EBAE221889AE05005EF71E /* PKGlobalNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGlobalNotificationsViewController.h; sourceTree = "<group>"; };
 		E4EBAE231889AE05005EF71E /* PKGlobalNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKGlobalNotificationsViewController.m; sourceTree = "<group>"; };
 		E4EBAE241889AE05005EF71E /* PKGlobalNotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKGlobalNotificationsViewController.xib; sourceTree = "<group>"; };
@@ -122,6 +145,16 @@
 				E4D777561856469C00C3A37C /* CoreGraphics.framework in Frameworks */,
 				E4D777581856469C00C3A37C /* UIKit.framework in Frameworks */,
 				E4D777541856469C00C3A37C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E345D818CA535A00DCD482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E345DC18CA535A00DCD482 /* XCTest.framework in Frameworks */,
+				E4E345DE18CA535A00DCD482 /* UIKit.framework in Frameworks */,
+				E4E345DD18CA535A00DCD482 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				E4D777591856469C00C3A37C /* Sandbox */,
+				E4E345DF18CA535A00DCD482 /* Sandbox Tests */,
 				E4D777521856469C00C3A37C /* Frameworks */,
 				E4D777511856469C00C3A37C /* Products */,
 			);
@@ -328,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				E4D777501856469C00C3A37C /* Sandbox.app */,
+				E4E345DB18CA535A00DCD482 /* Sandbox Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,6 +385,7 @@
 				E4D777631856469C00C3A37C /* PKAppDelegate.m */,
 				D4113089188632B100551DF0 /* Main UI */,
 				E497AA0F1886F247002B6516 /* Examples */,
+				E4E345ED18CA536E00DCD482 /* Other Extensions */,
 				E4D77782185646C900C3A37C /* Resources */,
 				E4D7775A1856469C00C3A37C /* Supporting Files */,
 			);
@@ -386,6 +422,34 @@
 			name = "Class Extensions";
 			sourceTree = "<group>";
 		};
+		E4E345DF18CA535A00DCD482 /* Sandbox Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E4E345F118CA53AA00DCD482 /* PKEmailValidationTests.m */,
+				E4E345E018CA535A00DCD482 /* Supporting Files */,
+			);
+			path = "Sandbox Tests";
+			sourceTree = "<group>";
+		};
+		E4E345E018CA535A00DCD482 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4E345E118CA535A00DCD482 /* Sandbox Tests-Info.plist */,
+				E4E345E218CA535A00DCD482 /* InfoPlist.strings */,
+				E4E345E718CA535A00DCD482 /* Sandbox Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4E345ED18CA536E00DCD482 /* Other Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4E345EE18CA539500DCD482 /* NSString+Validation.h */,
+				E4E345EF18CA539500DCD482 /* NSString+Validation.m */,
+			);
+			name = "Other Extensions";
+			sourceTree = "<group>";
+		};
 		E4EBAE211889ADED005EF71E /* Global Notification Subscribing */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +480,24 @@
 			productReference = E4D777501856469C00C3A37C /* Sandbox.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E4E345DA18CA535A00DCD482 /* Sandbox Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4E345EC18CA535A00DCD482 /* Build configuration list for PBXNativeTarget "Sandbox Tests" */;
+			buildPhases = (
+				E4E345D718CA535A00DCD482 /* Sources */,
+				E4E345D818CA535A00DCD482 /* Frameworks */,
+				E4E345D918CA535A00DCD482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4E345E918CA535A00DCD482 /* PBXTargetDependency */,
+			);
+			name = "Sandbox Tests";
+			productName = "Sandbox Tests";
+			productReference = E4E345DB18CA535A00DCD482 /* Sandbox Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -425,6 +507,11 @@
 				CLASSPREFIX = PK;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Panko;
+				TargetAttributes = {
+					E4E345DA18CA535A00DCD482 = {
+						TestTargetID = E4D7774F1856469C00C3A37C;
+					};
+				};
 			};
 			buildConfigurationList = E4D7774B1856469C00C3A37C /* Build configuration list for PBXProject "Sandbox" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -440,6 +527,7 @@
 			projectRoot = "";
 			targets = (
 				E4D7774F1856469C00C3A37C /* Sandbox */,
+				E4E345DA18CA535A00DCD482 /* Sandbox Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,6 +554,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4E345D918CA535A00DCD482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E345E418CA535A00DCD482 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -479,6 +575,7 @@
 				E4270FFA185A76C60096E236 /* PKCard.m in Sources */,
 				D411309218879CB000551DF0 /* PKShakeViewController.m in Sources */,
 				E4D777951856575500C3A37C /* UIView+ObjectTag.m in Sources */,
+				E4E345F018CA539500DCD482 /* NSString+Validation.m in Sources */,
 				E4D4B9FA18B2C72C00553163 /* UIImage+AsyncLoading.m in Sources */,
 				D411309C1888D5C100551DF0 /* PKCardDemoViewController.m in Sources */,
 				E43BEC071891BC1600EB17A7 /* PKRuntimeViewController.m in Sources */,
@@ -497,7 +594,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4E345D718CA535A00DCD482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E345F218CA53AA00DCD482 /* PKEmailValidationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4E345E918CA535A00DCD482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D7774F1856469C00C3A37C /* Sandbox */;
+			targetProxy = E4E345E818CA535A00DCD482 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E4D7775C1856469C00C3A37C /* InfoPlist.strings */ = {
@@ -516,6 +629,14 @@
 				E4D777911856531800C3A37C /* es */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		E4E345E218CA535A00DCD482 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4E345E318CA535A00DCD482 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -629,6 +750,48 @@
 			};
 			name = Release;
 		};
+		E4E345EA18CA535A00DCD482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sandbox.app/Sandbox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sandbox Tests/Sandbox Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sandbox Tests/Sandbox Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E4E345EB18CA535A00DCD482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sandbox.app/Sandbox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sandbox Tests/Sandbox Tests-Prefix.pch";
+				INFOPLIST_FILE = "Sandbox Tests/Sandbox Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -649,6 +812,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E4E345EC18CA535A00DCD482 /* Build configuration list for PBXNativeTarget "Sandbox Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4E345EA18CA535A00DCD482 /* Debug */,
+				E4E345EB18CA535A00DCD482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
