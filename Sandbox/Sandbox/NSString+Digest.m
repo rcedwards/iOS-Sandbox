@@ -14,7 +14,7 @@
 - (NSString *)PK_SHA1 {
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
     
-    CC_SHA1(self.UTF8String, self.length, digest);
+    CC_SHA1(self.UTF8String, (int)self.length, digest);
     
     NSMutableString *result = [NSMutableString string];
     for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++) {

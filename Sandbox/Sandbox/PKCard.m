@@ -59,7 +59,7 @@
 			rankString = @"Jack";
 			break;
 		default:
-			rankString = [NSString stringWithFormat:@"%u", rank+1];
+			rankString = [NSString stringWithFormat:@"%ul", rank+1];
 			break;
 	}
 	return rankString;

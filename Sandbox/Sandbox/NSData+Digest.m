@@ -14,7 +14,7 @@
 
 - (NSData *)PK_SHA1 {
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-    unsigned char *hashedData = CC_SHA1(self.bytes, self.length, digest);
+    unsigned char *hashedData = CC_SHA1(self.bytes, (int)self.length, digest);
     return [NSData dataWithBytes:hashedData length:self.length];
 }
 
