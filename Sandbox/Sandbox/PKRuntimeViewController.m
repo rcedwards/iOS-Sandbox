@@ -37,7 +37,9 @@ void ReportFunction(id self, SEL _cmd)
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
 	Class newClass = objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
 	class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:");
 	objc_registerClassPair(newClass);
@@ -45,6 +47,8 @@ void ReportFunction(id self, SEL _cmd)
 	id instanceOfNewClass =
     [[newClass alloc] initWithDomain:@"someDomain" code:0 userInfo:nil];
 	[instanceOfNewClass performSelector:@selector(report)];
+#pragma clang diagnostic pop
+
 }
 
 @end
