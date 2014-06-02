@@ -40,9 +40,14 @@ void ReportFunction(id self, SEL _cmd)
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-	Class newClass = objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
-	class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:");
-	objc_registerClassPair(newClass);
+    
+    static dispatch_once_t onceToken;
+    static Class newClass = nil;
+    dispatch_once(&onceToken, ^{
+        newClass = objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
+        class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:");
+        objc_registerClassPair(newClass);
+    });
 	
 	id instanceOfNewClass =
     [[newClass alloc] initWithDomain:@"someDomain" code:0 userInfo:nil];
