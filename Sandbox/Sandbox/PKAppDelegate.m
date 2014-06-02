@@ -8,7 +8,7 @@
 
 #import "PKAppDelegate.h"
 
-#import "PKUITableViewController.h"
+#import "PKAssosicatedObjectHelperTableViewController.h"
 #import "PKSelectionViewController.h"
 
 @interface PKAppDelegate()

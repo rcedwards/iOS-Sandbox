@@ -17,6 +17,7 @@
 #import "PKBackgroundExampleViewController.h"
 #import "PKRuntimeViewController.h"
 #import "PKImageListTableViewController.h"
+#import "PKAssosicatedObjectHelperTableViewController.h"
 
 @interface PKSelectionViewController ()
 
@@ -42,13 +43,14 @@
 										  NSStringFromClass([PKGlobalNotificationsViewController class])],
                                       @[
                                           NSStringFromClass([PKCardDemoViewController class]),
-										  NSStringFromClass([PKRuntimeViewController class])],
+										  NSStringFromClass([PKRuntimeViewController class]),
+                                          NSStringFromClass([PKAssosicatedObjectHelperTableViewController class])],
                                       @[
                                           NSStringFromClass([PKBackgroundExampleViewController class])]];
         
         _sectionTitles = @[@"UI Stuff",
                            @"KVO / Notifications",
-                           @"Models",
+                           @"Model / Extensions",
                            @"Networking"];
         
     }

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PKUITableViewController : UITableViewController
+@interface PKAssosicatedObjectHelperTableViewController : UITableViewController
 
 @end

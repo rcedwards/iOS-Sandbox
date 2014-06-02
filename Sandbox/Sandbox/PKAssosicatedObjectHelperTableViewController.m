@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Panko. All rights reserved.
 //
 
-#import "PKUITableViewController.h"
+#import "PKAssosicatedObjectHelperTableViewController.h"
 
 #import "UIView+ObjectTag.h"
 
-@interface PKUITableViewController () {
+@interface PKAssosicatedObjectHelperTableViewController () {
     NSMutableArray *_objects;
 }
 
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation PKUITableViewController
+@implementation PKAssosicatedObjectHelperTableViewController
 
 - (void)viewDidLoad
 {
@@ -33,7 +33,21 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Private Helpers
+
+- (void)updateMostCurrentDateHighlight {
+    
+    UIView *previouslyMostCurrentView = [self.tableView viewWithObjectTag:self.mostCurrentDate];
+	[previouslyMostCurrentView setBackgroundColor:nil];
+    
+    if (_objects.count) {
+        self.mostCurrentDate = _objects[0];
+    }
+    
+    UIView *mostCurrentView = [self.tableView viewWithObjectTag:self.mostCurrentDate];
+	mostCurrentView.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)insertNewObject:(id)sender
@@ -44,17 +58,11 @@
     
 	NSDate *currentDate = [NSDate date];
 	[_objects insertObject:currentDate atIndex:0];
-	
-	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 	
-	UIView *previouslyMostCurrentView = [self.tableView viewWithObjectTag:self.mostCurrentDate];
-	[previouslyMostCurrentView setBackgroundColor:nil];
-	
-	self.mostCurrentDate = [_objects objectAtIndex:0];
-	
-	UIView *mostCurrentView = [self.tableView viewWithObjectTag:self.mostCurrentDate];
-	mostCurrentView.backgroundColor = [UIColor lightGrayColor];
+    [self updateMostCurrentDateHighlight];
 }
 
 #pragma mark - Table View
@@ -83,16 +91,16 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
     return YES;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [_objects removeObjectAtIndex:indexPath.row];
+        
+        [self updateMostCurrentDateHighlight];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }
 
