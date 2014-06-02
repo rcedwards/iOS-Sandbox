@@ -14,9 +14,10 @@
 
 @implementation PKShakeViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self.view becomeFirstResponder];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self becomeFirstResponder];
 }
 
 #pragma mark - Motion Events
@@ -44,6 +45,10 @@
 
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
 	NSLog(@"Motion Event Cancelled: %@", event);
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
 }
 
 @end
