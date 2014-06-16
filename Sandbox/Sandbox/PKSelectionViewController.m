@@ -18,6 +18,7 @@
 #import "PKRuntimeViewController.h"
 #import "PKImageListTableViewController.h"
 #import "PKAssosicatedObjectHelperTableViewController.h"
+#import "PKRootPhotoCollectionViewController.h"
 
 @interface PKSelectionViewController ()
 
@@ -37,7 +38,8 @@
 										  NSStringFromClass([PKColorSwapperViewController class]),
 										  NSStringFromClass([PKImageEvalViewController class]),
                                           NSStringFromClass([PKShakeViewController class]),
-										  NSStringFromClass([PKImageListTableViewController class])],
+										  NSStringFromClass([PKImageListTableViewController class]),
+                                          NSStringFromClass([PKRootPhotoCollectionViewController class])],
                                       @[
 										  NSStringFromClass([PKKVOExampleViewController class]),
 										  NSStringFromClass([PKGlobalNotificationsViewController class])],

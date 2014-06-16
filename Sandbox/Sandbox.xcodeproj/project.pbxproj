@@ -51,6 +51,12 @@
 		E4E345F218CA53AA00DCD482 /* PKEmailValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E345F118CA53AA00DCD482 /* PKEmailValidationTests.m */; };
 		E4EBAE251889AE05005EF71E /* PKGlobalNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EBAE231889AE05005EF71E /* PKGlobalNotificationsViewController.m */; };
 		E4EBAE261889AE05005EF71E /* PKGlobalNotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EBAE241889AE05005EF71E /* PKGlobalNotificationsViewController.xib */; };
+		EF0DBF9B194E6E3A00C2FE70 /* PKBaseImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBF96194E6E3A00C2FE70 /* PKBaseImageViewCell.m */; };
+		EF0DBF9C194E6E3A00C2FE70 /* PKBaseImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0DBF97194E6E3A00C2FE70 /* PKBaseImageViewCell.xib */; };
+		EF0DBF9D194E6E3A00C2FE70 /* PKSupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBF99194E6E3A00C2FE70 /* PKSupplementaryView.m */; };
+		EF0DBF9E194E6E3A00C2FE70 /* PKSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0DBF9A194E6E3A00C2FE70 /* PKSupplementaryView.xib */; };
+		EF0DBFA3194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFA1194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.m */; };
+		EF0DBFA4194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0DBFA2194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +141,15 @@
 		E4EBAE221889AE05005EF71E /* PKGlobalNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGlobalNotificationsViewController.h; sourceTree = "<group>"; };
 		E4EBAE231889AE05005EF71E /* PKGlobalNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKGlobalNotificationsViewController.m; sourceTree = "<group>"; };
 		E4EBAE241889AE05005EF71E /* PKGlobalNotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKGlobalNotificationsViewController.xib; sourceTree = "<group>"; };
+		EF0DBF95194E6E3A00C2FE70 /* PKBaseImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKBaseImageViewCell.h; sourceTree = "<group>"; };
+		EF0DBF96194E6E3A00C2FE70 /* PKBaseImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKBaseImageViewCell.m; sourceTree = "<group>"; };
+		EF0DBF97194E6E3A00C2FE70 /* PKBaseImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKBaseImageViewCell.xib; sourceTree = "<group>"; };
+		EF0DBF98194E6E3A00C2FE70 /* PKSupplementaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSupplementaryView.h; sourceTree = "<group>"; };
+		EF0DBF99194E6E3A00C2FE70 /* PKSupplementaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSupplementaryView.m; sourceTree = "<group>"; };
+		EF0DBF9A194E6E3A00C2FE70 /* PKSupplementaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKSupplementaryView.xib; sourceTree = "<group>"; };
+		EF0DBFA0194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRootPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		EF0DBFA1194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRootPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		EF0DBFA2194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKRootPhotoCollectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +292,7 @@
 		E497AA0F1886F247002B6516 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				EF0DBF93194E6E1100C2FE70 /* Collection View Examples */,
 				E4241BF218B2551A00F39B9D /* Tableview Images */,
 				E43BEC041891BBFD00EB17A7 /* Runtime */,
 				D4DF5F7B188C39380000B886 /* Background NSURLSessions */,
@@ -460,6 +476,38 @@
 			name = "Global Notification Subscribing";
 			sourceTree = "<group>";
 		};
+		EF0DBF93194E6E1100C2FE70 /* Collection View Examples */ = {
+			isa = PBXGroup;
+			children = (
+				EF0DBF9F194E6E4400C2FE70 /* ViewControllers */,
+				EF0DBF94194E6E2200C2FE70 /* Views */,
+			);
+			name = "Collection View Examples";
+			sourceTree = "<group>";
+		};
+		EF0DBF94194E6E2200C2FE70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF0DBF95194E6E3A00C2FE70 /* PKBaseImageViewCell.h */,
+				EF0DBF96194E6E3A00C2FE70 /* PKBaseImageViewCell.m */,
+				EF0DBF97194E6E3A00C2FE70 /* PKBaseImageViewCell.xib */,
+				EF0DBF98194E6E3A00C2FE70 /* PKSupplementaryView.h */,
+				EF0DBF99194E6E3A00C2FE70 /* PKSupplementaryView.m */,
+				EF0DBF9A194E6E3A00C2FE70 /* PKSupplementaryView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EF0DBF9F194E6E4400C2FE70 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF0DBFA0194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.h */,
+				EF0DBFA1194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.m */,
+				EF0DBFA2194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,8 +589,10 @@
 				E4D7778E1856531000C3A37C /* Localizable.strings in Resources */,
 				D411309418879DA200551DF0 /* PKShakeViewController.xib in Resources */,
 				E4A0EAE91876018A009350B1 /* El_Capitan.jpg in Resources */,
+				EF0DBF9C194E6E3A00C2FE70 /* PKBaseImageViewCell.xib in Resources */,
 				E497AA151886F2BA002B6516 /* PKImageEvalViewController.xib in Resources */,
 				D41130881886328E00551DF0 /* PKSelectionViewController.xib in Resources */,
+				EF0DBF9E194E6E3A00C2FE70 /* PKSupplementaryView.xib in Resources */,
 				E4EBAE261889AE05005EF71E /* PKGlobalNotificationsViewController.xib in Resources */,
 				E4CDEF3B18885BDA008B9560 /* AppAssets.xcassets in Resources */,
 				E4D7775E1856469C00C3A37C /* InfoPlist.strings in Resources */,
@@ -551,6 +601,7 @@
 				E497AA1D1886F8B9002B6516 /* PKColorSwapperViewController.xib in Resources */,
 				D411309D1888D5C100551DF0 /* PKCardDemoViewController.xib in Resources */,
 				E4A0EAEB187601B3009350B1 /* AFIcon.png in Resources */,
+				EF0DBFA4194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +633,10 @@
 				E4D77786185646F400C3A37C /* PKKVOExampleViewController.m in Sources */,
 				D4EB35E118B2FA4F003EC5E5 /* NSString+Digest.m in Sources */,
 				E497AA1B1886F764002B6516 /* PKColorSwapperViewController.m in Sources */,
+				EF0DBF9B194E6E3A00C2FE70 /* PKBaseImageViewCell.m in Sources */,
 				E4D777601856469C00C3A37C /* main.m in Sources */,
+				EF0DBFA3194E6E5100C2FE70 /* PKRootPhotoCollectionViewController.m in Sources */,
+				EF0DBF9D194E6E3A00C2FE70 /* PKSupplementaryView.m in Sources */,
 				E4EBAE251889AE05005EF71E /* PKGlobalNotificationsViewController.m in Sources */,
 				E4241BF618B2555600F39B9D /* PKImageListTableViewController.m in Sources */,
 				D41130871886328E00551DF0 /* PKSelectionViewController.m in Sources */,
