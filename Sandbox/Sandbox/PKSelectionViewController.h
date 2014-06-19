@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class PKDetailViewController;
+
 @interface PKSelectionViewController : UITableViewController
+
+@property (nonatomic, strong) PKDetailViewController *detailViewController;
 
 @end

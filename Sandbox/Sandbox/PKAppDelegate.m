@@ -10,6 +10,7 @@
 
 #import "PKAssosicatedObjectHelperTableViewController.h"
 #import "PKSelectionViewController.h"
+#import "PKDetailViewController.h"
 
 @interface PKAppDelegate()
 
@@ -30,8 +31,14 @@
     PKSelectionViewController *selectionViewController = [[PKSelectionViewController alloc] init];
     UINavigationController *selectionNavContainer = [[UINavigationController alloc] initWithRootViewController:selectionViewController];
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        PKDetailViewController *detailVC = [[PKDetailViewController alloc] init];
+        selectionViewController.detailViewController = detailVC;
+        
         UISplitViewController *splitVC = [[UISplitViewController alloc] init];
-        splitVC.viewControllers = @[selectionNavContainer, [[UIViewController alloc] init]];
+        splitVC.delegate = detailVC;
+        
+        UINavigationController *detailNavContainer = [[UINavigationController alloc] initWithRootViewController:detailVC];
+        splitVC.viewControllers = @[selectionNavContainer, detailNavContainer];
         self.window.rootViewController = splitVC;
     } else {
         self.window.rootViewController = selectionNavContainer;

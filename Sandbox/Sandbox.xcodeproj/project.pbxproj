@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A963B711952863F003CD6B3 /* PKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A963B701952863F003CD6B3 /* PKDetailViewController.m */; };
 		D41130871886328E00551DF0 /* PKSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41130851886328E00551DF0 /* PKSelectionViewController.m */; };
 		D41130881886328E00551DF0 /* PKSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41130861886328E00551DF0 /* PKSelectionViewController.xib */; };
 		D411309218879CB000551DF0 /* PKShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D411309118879CB000551DF0 /* PKShakeViewController.m */; };
@@ -70,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A963B6F1952863F003CD6B3 /* PKDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDetailViewController.h; sourceTree = "<group>"; };
+		0A963B701952863F003CD6B3 /* PKDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDetailViewController.m; sourceTree = "<group>"; };
 		D41130841886328E00551DF0 /* PKSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSelectionViewController.h; sourceTree = "<group>"; };
 		D41130851886328E00551DF0 /* PKSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSelectionViewController.m; sourceTree = "<group>"; };
 		D41130861886328E00551DF0 /* PKSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKSelectionViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				D41130841886328E00551DF0 /* PKSelectionViewController.h */,
 				D41130851886328E00551DF0 /* PKSelectionViewController.m */,
 				D41130861886328E00551DF0 /* PKSelectionViewController.xib */,
+				0A963B6F1952863F003CD6B3 /* PKDetailViewController.h */,
+				0A963B701952863F003CD6B3 /* PKDetailViewController.m */,
 			);
 			name = "Main UI";
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A963B711952863F003CD6B3 /* PKDetailViewController.m in Sources */,
 				D4DF5F7F188C394F0000B886 /* PKBackgroundExampleViewController.m in Sources */,
 				D4D6D5B018B2F10C00F7FD31 /* NSData+Digest.m in Sources */,
 				E497AA131886F26F002B6516 /* PKImageEvalViewController.m in Sources */,

@@ -19,6 +19,7 @@
 #import "PKImageListTableViewController.h"
 #import "PKAssosicatedObjectHelperTableViewController.h"
 #import "PKRootPhotoCollectionViewController.h"
+#import "PKDetailViewController.h"
 
 @interface PKSelectionViewController ()
 
@@ -98,7 +99,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *vc = [[NSClassFromString(self.viewControllerCollection[indexPath.section][indexPath.row]) alloc] init];
     if (self.splitViewController) {
-		self.splitViewController.viewControllers = @[self.navigationController, vc];
+        [self.detailViewController displaySampleViewController:vc];
     } else {
         [self.navigationController pushViewController:vc animated:YES];
     }
